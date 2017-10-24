@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>monkey</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+</head>
+<body>
+	<div id="header"></div>
+	<div id="body">
+		<table width="100%">
+			<tr>
+		    	<th>
+		    		<span>
+						<input type="text" name="input" id="input" placeholder="What to find..."></input>
+						<input type="text" name="lettersPerSec" id="lettersPerSec" placeholder="How many letters per second?"></input>						
+						<span id="curWord"></span>
+		    		</span>
+		    	</th>
+		    	<th style="text-align: right;">
+					<span align="right" id="count"></span>
+		    	</th>
+		  	</tr>
+		</table>
+		<div id="output"></div>
+		<div id="description">
+		A monkey types at a 26-letter keyboard with one key corresponding to each of the lower-case letters until he randomly writes your word. Each keystroke is chosen independently and uniformly at random from the 26 possibilities. <br />Notice: You can tell the monkey how many keystrokes he should do per second, but how many he really does depends on the strength of your PC.<br />
+		A word with more than 3 letters can take hours to find! Just start with some short words like "hi".
+		</div>
+	</div>
+</body>
+<script src="main.js" type="text/javascript"></script>
+</html>
